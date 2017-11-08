@@ -1,4 +1,6 @@
-<h2><%= @article.title %></h2>
+<h2><%= @article.title %> </h2>
+<p> <%= link_to "Edit", edit_article_path(@article) %> </p>
+<p> <%= link_to "Delete", article_path(@article), method: :delete %> </p>
+
 <p><%= @article.content %></p>
 
-<p> <%= link_to "Edit restaurant", edit_article_path(@article) %> </p>

@@ -1,6 +1,6 @@
-<h1> Wikinimous</h1>
+<h1> <%= link_to "Wikinimous", articles_path  %> </h1>
 
-<%= link_to "New article", new_article_path  %>
+<%= link_to "New article", new_article_path %>
 
   <% @articles.each do |article| %>
 
