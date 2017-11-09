@@ -10,7 +10,7 @@ require 'faker'
 
 puts 'Cleaning database...'
 Article.destroy_all
-# Ask how to start filling the database from the beggining
+# Ask how to start filling the database from the beggining? db:drop
 
 puts 'Creating 10 fake articles...'
 10.times do
