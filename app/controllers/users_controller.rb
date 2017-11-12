@@ -6,18 +6,15 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
       if @user.save
         session[:user_id] = @user.id
-        redirect_to :home, notice: "Account created succesfully"
-        # '/'
+        redirect_to root_path
       else
-        flash[:error] = "Ar error occured!"
+        flash[:error] = "An error occured!"
 
-        # redirect_to '/signup'
-        render 'new'
+        redirect_to signup_path
+        # render 'new'
       end
     end
 
-  # @task
-  # redirect_to tasks_path
 
   private
 
